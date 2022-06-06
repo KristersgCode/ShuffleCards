@@ -15,18 +15,15 @@ const values = [
   "Q",
   "K",
 ];
-const colors = ["Black", "Red"];
 
 //Empty array to contain cards
 let deck = [];
 
 //Create a deck of cards
 for (let i = 0; i < suits.length; i++) {
-  for (let y = 0; y < colors.length; y++) {
-    for (let x = 0; x < values.length; x++) {
-      let card = { Value: values[x], Suit: suits[i], Color: colors[y] };
-      deck.push(card);
-    }
+  for (let x = 0; x < values.length; x++) {
+    let card = { Value: values[x], Suit: suits[i] };
+    deck.push(card);
   }
 }
 
